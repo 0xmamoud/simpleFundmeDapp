@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background: #5b8e7d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      h3 {
+        line-height: 0;
+        margin-top: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        min-width: 300px;
+        height: 400px;
+        padding: 10px;
+        background: #fdeeda;
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .btn {
+        border: none;
+        background-color: #041c40;
+        color: #fdeeda;
+        padding: 10px 20px;
+        border-radius: 3px;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .btn:active {
+        transform: scale(1.15);
+      }
+
+      input {
+        height: 30px;
+        font-size: 20px;
+      }
+    </style>
+
+    <title>Fund Me</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Send me some ETH</h3>
+      <button class="btn btn__connect">Connect</button>
+      <button class="btn btn__balance">Balance</button>
+      <button class="btn btn__withdraw">Withdraw</button>
+      <form class="form">
+        <input type="text" name="fund" placeholder="send ETH" />
+        <button class="btn" type="submit">Fund</button>
+      </form>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
